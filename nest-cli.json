@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/meli-inventory-management-system/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/meli-inventory-management-system/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/meli-inventory-management-system",
+  "projects": {
+    "inventory-api-gateway": {
+      "type": "application",
+      "root": "apps/inventory-api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/inventory-api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/inventory-api-gateway/tsconfig.app.json"
+      }
+    },
+    "inventory-command": {
+      "type": "application",
+      "root": "apps/inventory-command",
+      "entryFile": "main",
+      "sourceRoot": "apps/inventory-command/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/inventory-command/tsconfig.app.json"
+      }
+    },
+    "inventory-query": {
+      "type": "application",
+      "root": "apps/inventory-query",
+      "entryFile": "main",
+      "sourceRoot": "apps/inventory-query/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/inventory-query/tsconfig.app.json"
+      }
+    },
+    "meli-inventory-management-system": {
+      "type": "application",
+      "root": "apps/meli-inventory-management-system",
+      "entryFile": "main",
+      "sourceRoot": "apps/meli-inventory-management-system/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/meli-inventory-management-system/tsconfig.app.json"
+      }
+    }
+  }
+}

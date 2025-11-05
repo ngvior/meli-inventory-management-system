@@ -1,0 +1,27 @@
+[
+  {
+    "sku": "SKU-001-TLB",
+    "stock": 125,
+    "version": 3
+  },
+  {
+    "sku": "SKU-002-NJS",
+    "stock": 42,
+    "version": 12
+  },
+  {
+    "sku": "SKU-003-TSH",
+    "stock": 5,
+    "version": 3
+  },
+  {
+    "sku": "SKU-004-ACC",
+    "stock": 200,
+    "version": 1
+  },
+  {
+    "sku": "SKU-005-BKG",
+    "stock": 0,
+    "version": 8
+  }
+]
